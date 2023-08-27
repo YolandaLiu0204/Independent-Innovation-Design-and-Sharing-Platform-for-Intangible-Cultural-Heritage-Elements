@@ -1,0 +1,15 @@
+<!--pages/file/file.wxml-->
+<button bindtap="chooseImg">选择图片</button>
+<view wx:for-items="{{imgurl}}" wx:for-item="item" wx:key="*this">
+  <image mode="widthFix" src="{{item}}" data-src="{{item}} " bindtap="previewImg" style="width:100px;float:left"></image>
+</view>
+
+
+<view>上传的图片</view>
+
+
+<view wx:if="{{hasImg === true}}">
+    <button bindtap="previewImg">预览照片</button>
+</view>
+
+

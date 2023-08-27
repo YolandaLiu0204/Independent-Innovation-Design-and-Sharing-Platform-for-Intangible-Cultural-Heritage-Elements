@@ -1,0 +1,17 @@
+<view class="content">
+  <!--  搜索框  -->
+  <view class='search'>
+      <input type='text' placeholder='输入你想要的内容' confirm-type='search' value="{{inputValue}}" bindinput='inputBind' bindconfirm='query'></input>
+      <image class="" src='../images/search/search.png' bindtap='query'></image>
+  </view>
+  <!-- 活动列表 -->
+  <view class="list">
+  <block wx:for="{{array}}" wx:key="id">
+    <navigator url="{{item.link}}" open-type="navigate">
+      <view class="activity">
+        <image src="{{item.img}}" style="width:365px;height:186px;"></image>
+      </view>
+    </navigator>
+  </block>
+  </view>
+</view>

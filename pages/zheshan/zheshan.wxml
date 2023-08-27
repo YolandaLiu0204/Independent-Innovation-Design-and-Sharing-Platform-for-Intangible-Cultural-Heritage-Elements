@@ -1,0 +1,12 @@
+<!--pages/zheshan/zheshan.wxml-->
+<view class="container">
+  <view id="imgsection">
+    <view class="imglist">
+      <block wx:for="{{image}}" wx:for-item="image" wx:key="*this">
+        <image class="imgitem" mode="widthFix" src="{{image.imgurl}}" />
+      </block>
+    </view>
+  </view>
+
+</view>
+

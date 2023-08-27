@@ -1,0 +1,68 @@
+<!--pages/index_detail_1/index_detail_1.wxml-->
+<view class="content">
+  <view class="view_1">
+    <text class="title_1">本期刺绣简介</text>
+  </view>
+  <view class="view_2">
+    <navigator url="../index_detail_2/index_detail_2" open-type="navigate">
+      <view class="btn_detail_1">
+        <text class="text_summary" decode="{{true}}">&nbsp;&ensp;&ensp;&ensp;&ensp;苏绣，又称南通仿真绣，是苏州地区刺绣产品的
+      总称，为江苏省苏州市民间传统美术，历史悠久。
+      &nbsp;&ensp;&ensp;&ensp;&ensp;苏绣既是是反映江南文化的典型代表，又为中国
+      四大名绣之一。2006年5月20日，苏绣经中华人民共和
+      国国务院批准列入第一批国家级非物质文化遗产名
+      录。
+      &nbsp;&ensp;&ensp;&ensp;&ensp;愿您通过本期活动，体验到
+      苏绣的独特魅力。
+        </text>
+        <view class="reminder_position">
+        <text class="text_reminder">点击大图查看详情</text>
+        </view>
+      </view>
+    </navigator>
+    
+    
+    <view>
+      <image src="../images/activity-list/detail_1/分割线.png" style="width:389px;height:1px;"/>
+    </view>
+  </view>
+
+  <view class="view_3">
+    <text class="title_2">用户设计作品展示</text>
+  </view>
+
+  <view class="view_4">
+    <view class="borderset">
+      <view class="worklist">
+      <block wx:for="{{array}}" wx:key="id">
+        <!-- 作品 -->
+        <view class="item">
+          <view class="desc">
+            <view class="work">
+              <image src="{{item.img}}" style="width:111px;height:107px"/>
+            </view>
+            <view class="userinfo">
+              <image src="{{item.userheadpic}}" style="width:25px;height:25px;"/>
+              <view class="username">{{item.username}}</view>
+            </view>
+          </view>
+          <view class="interaction">
+            <image src="{{item.follow}}" style="width:38px;height:18px;"/>
+            <image src="{{item.like}}" style="width:22px;height:22px;"/>
+            <image src="{{item.collection}}" style="width:22px;height:22px;"/>
+          </view>
+        </view>
+      </block>
+      </view>     
+    </view>
+    <view class="moreset">
+      <text class="moretext">更多</text>
+    </view>
+  </view>
+  <!-- <navigator url="../creation/creation" open-type="navigate"> -->
+    <view class="view_5">
+      <button class="button" bindtap="switchtodesign" disabled="{{disabled}}">我也要设计</button>
+    </view>
+  <!-- </navigator> -->
+  
+</view>

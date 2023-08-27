@@ -1,0 +1,42 @@
+/* pages/creation/creation.wxss */
+page {
+  width: 100%;
+
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  background-color: rgba(255, 252, 245, 1);
+}
+
+.view1{
+  width: 100%;
+  height: 41px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:left;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+}
+
+.view1_text{
+  color: rgba(149, 88, 23, 1);
+  font-size: 28px;
+}
+
+.view2{
+  display: grid;
+  grid-template-columns: 198px 198px;
+  grid-template-rows: 225px 225px 225px;
+  align-items: center;
+  justify-content:center;
+}
+
+/* .work{
+  align-items: center;
+  justify-content:left;
+} */

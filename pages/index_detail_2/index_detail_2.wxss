@@ -1,0 +1,42 @@
+/* pages/index_detail_2/index_detail_2.wxss */
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0rpx;
+  background-color: rgba(255, 252, 245, 1);
+}
+
+video{
+  width: 383px;
+  height: 211px;
+}
+
+.secVideo{
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 10px;
+}
+.danmu{
+  width: 383px;
+  display: grid;
+  grid-template-columns: 303px 80px;
+  grid-template-rows: 30px;
+  align-items: center;
+  justify-content:center;
+}
+
+.fasongdanmu{
+  color: white;
+  background:rgba(149, 88, 23, 1);
+  font-size: 14px;
+}
+.shurukuang{
+  background-color:whitesmoke;
+  height: 30px;
+}

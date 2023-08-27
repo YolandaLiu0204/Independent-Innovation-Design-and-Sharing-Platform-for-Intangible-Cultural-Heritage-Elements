@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/creation/creation",
+    "pages/index_detail_1/index_detail_1",
+    "pages/index_detail_2/index_detail_2",
+    "pages/zheshan/zheshan",
+    "pages/file/file",
+    "pages/tuanshan/tuanshan"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "绣阁",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "color": "#999999",
+    "selectedColor": "#999999",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "活动首页",
+        "iconPath": "pages/images/tab/home-0.png",
+        "selectedIconPath": "pages/images/tab/home-1.png"
+      },
+      {
+        "pagePath": "pages/creation/creation",
+        "iconPath": "pages/images/tab/Add.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "pages/images/tab/me-0.png",
+        "selectedIconPath": "pages/images/tab/me-1.png"
+      }
+    ]
+  },
+  
+  "sitemapLocation": "sitemap.json"
+}

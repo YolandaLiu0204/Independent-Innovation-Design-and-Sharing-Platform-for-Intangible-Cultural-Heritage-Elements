@@ -1,0 +1,21 @@
+<!--pages/creation/creation.wxml-->
+<view class="container">
+<!-- 提示文字 -->
+  <view class="view1">
+    <text class="view1_text">请选择文创类型</text>
+  </view>
+<!-- 模板列表 -->
+  <view class="view2">
+    <block wx:for="{{array}}">
+      <navigator url="{{item.link}}" open-type="navigate">
+        <view class="work">
+          <view>
+            <image src="{{item.img}}" style="width:194px;height:194px;"></image>
+          </view>
+        </view>
+      </navigator>
+      
+    </block>
+  </view>
+
+</view>
